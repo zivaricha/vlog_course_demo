@@ -1,0 +1,30 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 about homepage_content">
+    <h2>About</h2>
+    <hr>
+    <p>as daas dasda sdada sd asdasd</p>
+    <p>ziv bla vlasdk asdklasdl jasdkl adkjsd fasdf sadfa
+      sd fsad fas dfasdfh saidfhiasu hdfiosadh oisaud hfoi as udh fois audh fo iusa dhfoiusah  dfoi uasd hfo <a href="#">Unicasts.</a></p>
+    <p>kljs dlfhsak lfjhpw9 ehjroi sa dnfo ijsa dn fiajsdhfljkasdh filj asd  hfilua shdfiuo  n aoifnl  si vlau hasdnf</p>
+
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>Stuff iv written</h2>
+    <hr>
+    <%= @posts.each do |post| %>
+      <h3><a href="#"><%= link_to post.title, post%></a></h3>
+      <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Stuff iv built</h2>
+    <hr>
+    <h3><a href="#">Unicasts</a></h3>
+    <p class="date">Friday April 10th</p>
+    <h3><a href="#">The Ziv Aricha community</a></h3>
+    <p class="date">Friday April 10th</p>
+    <h3><a href="#">12 in 12 challange</a></h3>
+    <p class="date">Friday April 10th</p>
+  </div>
+</div>

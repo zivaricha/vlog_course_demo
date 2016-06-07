@@ -12,7 +12,7 @@
 <body>
 
   <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Ziv Aricha </a>
+    <%= link_to "Ziv Aricha", root_path, class:"name" %>
     <nav>
       <%= link_to "Articles", posts_path %>
       <a href="#">Project</a>
@@ -21,7 +21,17 @@
 
     </header>
 
-<%= yield %>
+
+    <%= yield %>
+
+        <footer id="main_footer">
+      <p class="copyright">©2016 Ziv Aricha </p>
+      <nav>
+        <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-dribbble" aria-hidden="true"></i></a>
+        <a href="#"><i class="fa fa-github" aria-hidden="true"></i></a>
+      </nav>
+    </footer>
 
 </body>
 </html>
